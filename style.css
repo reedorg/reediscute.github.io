@@ -1,0 +1,154 @@
+/**
+	Style.css
+	Main stylesheet for the website
+**/
+
+body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.pictures {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	transition: width .2s ease, height .2s ease, margin .2s ease, opacity .4s ease;
+	-webkit-transition: width .2s ease, height .2s ease, margin .2s ease, opacity .4s ease;
+	opacity: 100;
+	visibility: shown;
+  	z-index: 5;
+}
+
+#desc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 100%;
+	transition: top .5s;
+	z-index: 4;
+}
+
+#desc.shown {
+	top: 0%;
+}
+
+#desc.arc { /* Change this shit */
+	background-color: #EEC312;
+}
+
+#desc.reed { /* Change that shit too, also need to change it in HTML because fuck you that's why */
+	background-color: #AEE4FF;
+}
+
+#descText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 200px;
+	margin-top: -100px;
+	opacity: 100;
+	z-index: 6;
+	transition: opacity .2s ease;
+	vertical-align: middle;
+	font-family: Verdana;
+	font-size: 20px;
+	color: black;
+	text-shadow: 0px 0px 1px white;
+	text-align: justify;
+}
+
+#descText.mattText {
+	margin-left: -400px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+a:active {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.pictures:hover {
+	cursor: pointer;
+	width: 250px;
+	height: 250px;
+	margin-top: -125px;
+	box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.pictures:active {
+	box-shadow: 0 0 30px rgba(0,0,0,0.5);
+	width: 260px;
+	height: 260px;
+	margin-top: -130px;
+}
+
+#mattAvi {
+	margin-left: 50px;
+}
+
+#mattAvi:hover {
+	margin-left: 25px;
+}
+
+#mattAvi:active {
+	margin-left: 20px;
+}
+
+#joeyAvi {
+	margin-left: -250px;
+}
+
+#joeyAvi:hover {
+	margin-left: -275px;
+}
+
+#joeyAvi:active {
+	margin-left: -280px;
+}
+
+#dateText {
+	width: 100%;
+	font-family: Verdana;
+	position: fixed;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	font-size: 20px;
+	color: black;
+	text-shadow: 0px 0px 1px white;
+}
